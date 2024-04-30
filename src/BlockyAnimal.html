@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BlockyAnimal</title>
+  </head>
+
+  <body onload="main()">
+    <table>
+      <tr><td>Meghana Bellam</td></tr>
+      <tr><td>mbellam@ucsc.edu</td></tr>
+      <tr><td>Notes to Grader: </td></tr>
+      <tr><td>
+        <ul>
+            <li>The tail of the dog has the 3 part slider control and the animation for it. 
+              Please use Global Rotation to turn the camera to see the back of the dog for this. </li>
+            <li>The top of the tail is a RED CONE for a DEVIL's tail, a Non-cube primitive.</li>
+            <li>Press and hold the mouse down and drag it across to rotate the image.</li>
+        
+        
+      </ul>
+      </td></tr>
+  </table>
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot"> XXX </p>
+    <p>
+      Full Tail Animation:
+      <button type="button" id="animationFullOnButton">ON</button>
+      <button type="button" id="animationFullOffButton">OFF</button>
+    <p>
+      Tail Bottom Slide <input type="range" min="-10" max="15" value="5" class="slider" id="tailBottomSlide">
+      Animation:
+      <button type="button" id="animationTailBottomOnButton">ON</button>
+      <button type="button" id="animationTailBotoomOffButton">OFF</button>
+    <p>
+       Tail Middle Slide <input type="range" min="-1" max="70" value="5" class="slider" id="tailMiddleSlide">
+        Animation:
+        <button type="button" id="animationTailMiddleOnButton">ON</button>
+        <button type="button" id="animationTailMiddleOffButton">OFF</button>
+    <p>
+      Tail Top Slide <input type="range" min="-1" max="70" value="5" class="slider" id="tailTopSlide">
+      Animation:
+      <button type="button" id="animationTailTopOnButton">ON</button>
+      <button type="button" id="animationTailTopOffButton">OFF</button>
+    <p>
+      Global Rotation <input type="range" min="-180" max="180" value="5" class="slider" id="angleSlide">
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cone.js"></script>
+    <script src="BlockyAnimal.js"></script>
+  </body>
+</html>
